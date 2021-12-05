@@ -1,0 +1,11 @@
+.\build\cpuusage.o: user\cpuusage.c
+.\build\cpuusage.o: ..\..\include\rtthread.h
+.\build\cpuusage.o: ..\..\include\rtdef.h
+.\build\cpuusage.o: .\rtconfig.h
+.\build\cpuusage.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\build\cpuusage.o: ..\..\include\rtdebug.h
+.\build\cpuusage.o: ..\..\include\rtservice.h
+.\build\cpuusage.o: ..\..\include\rtm.h
+.\build\cpuusage.o: ..\..\include\rtthread.h
+.\build\cpuusage.o: ..\..\include\rthw.h
+.\build\cpuusage.o: user\cpuusage.h

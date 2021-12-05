@@ -1,0 +1,12 @@
+.\build\ccsbcs.o: ..\..\components\dfs\filesystems\elmfat\option\ccsbcs.c
+.\build\ccsbcs.o: ..\..\components\dfs\filesystems\elmfat\option\../ff.h
+.\build\ccsbcs.o: ..\..\include\rtthread.h
+.\build\ccsbcs.o: ..\..\include\rtdef.h
+.\build\ccsbcs.o: .\rtconfig.h
+.\build\ccsbcs.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\build\ccsbcs.o: ..\..\include\rtdebug.h
+.\build\ccsbcs.o: ..\..\include\rtservice.h
+.\build\ccsbcs.o: ..\..\include\rtm.h
+.\build\ccsbcs.o: ..\..\include\rtthread.h
+.\build\ccsbcs.o: ..\..\components\dfs\filesystems\elmfat\option\../integer.h
+.\build\ccsbcs.o: ..\..\components\dfs\filesystems\elmfat\option\../ffconf.h

@@ -1,0 +1,98 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="ESC32" target="8" version="2">
+  <project Name="ESC32">
+    <configuration Name="Common" Placement="Flash" Target="STM32F103C8" arm_architecture="v7M" arm_core_type="Cortex-M3" arm_fpu_type="None" arm_linker_heap_size="1024" arm_linker_jtag_pad_pre_dr="1" arm_linker_jtag_pad_pre_ir="5" arm_linker_process_stack_size="0" arm_linker_stack_size="1024" arm_simulator_memory_simulation_filename="$(TargetsDir)/STM32/STM32SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="STM32F103C8;0x10000;0x5000" arm_target_debug_interface_type="ADIv5" arm_target_interface_type="Default" arm_target_loader_applicable_loaders="Flash" arm_target_loader_default_loader="Flash" arm_target_loader_parameter="8000000" c_preprocessor_definitions="USE_STDPERIPH_DRIVER" c_user_include_directories="$(TargetsDir)/STM32/include" linker_memory_map_file="$(TargetsDir)/STM32/STM32F103C8_MemoryMap.xml" linker_output_format="hex" linker_scanf_fp_enabled="Yes" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml" oscillator_frequency="8MHz" project_directory="" project_type="Executable" property_groups_file_path="$(TargetsDir)/STM32/propertyGroups.xml" target_reset_script="Reset()"/>
+    <configuration Name="Flash" arm_target_flash_loader_file_path="$(TargetsDir)/STM32/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" arm_target_loader_can_erase_all="Yes" arm_target_loader_can_lock_all="No" arm_target_loader_can_lock_range="No" arm_target_loader_can_unlock_all="No" arm_target_loader_can_unlock_range="No" target_reset_script="FLASHReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file file_name="main.c"/>
+      <file file_name="main.h"/>
+      <file file_name="fet.c"/>
+      <file file_name="fet.h"/>
+      <file file_name="digital.h"/>
+      <file file_name="digital.c"/>
+      <file file_name="rcc.c"/>
+      <file file_name="rcc.h"/>
+      <file file_name="adc.h"/>
+      <file file_name="adc.c"/>
+      <file file_name="serial.c"/>
+      <file file_name="serial.h"/>
+      <file file_name="pwm.h"/>
+      <file file_name="pwm.c"/>
+      <file file_name="timer.h"/>
+      <file file_name="timer.c"/>
+      <file file_name="run.h"/>
+      <file file_name="run.c"/>
+      <file file_name="cli.c"/>
+      <file file_name="cli.h"/>
+      <file file_name="config.h"/>
+      <file file_name="config.c"/>
+      <file file_name="binary.h"/>
+      <file file_name="binary.c"/>
+      <file file_name="ow.c"/>
+      <file file_name="ow.h"/>
+      <file file_name="can.h"/>
+      <file file_name="can.c"/>
+      <folder Name="xxHash" file_name="">
+        <file file_name="xxhash.c"/>
+        <file file_name="xxhash.h"/>
+      </folder>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s"/>
+      <file file_name="$(TargetsDir)/STM32/STM32_Startup.s"/>
+      <file file_name="$(TargetsDir)/STM32/STM32_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file file_name="incbuild.js"/>
+      <file file_name="getbuildnum.h"/>
+      <file file_name="getbuildnum.c">
+        <configuration Name="Common" build_always_rebuild="Yes" compile_post_build_command="" compile_pre_build_command="&quot;$(StudioDir)/bin/crossscript&quot; &quot;load(\&quot;$(ProjectDir)/incbuild.js\&quot;);incbuild();&quot;"/>
+      </file>
+    </folder>
+    <folder Name="STM32 Drivers" file_name="">
+      <folder Name="inc" file_name="">
+        <file file_name="stm32f10x_gpio.h"/>
+        <file file_name="stm32f10x_rcc.h"/>
+        <file file_name="stm32f10x_conf.h"/>
+        <file file_name="stm32f10x.h"/>
+        <file file_name="stm32f10x_tim.h"/>
+        <file file_name="stm32f10x_dbgmcu.h"/>
+        <file file_name="stm32f10x_adc.h"/>
+        <file file_name="stm32f10x_dma.h"/>
+        <file file_name="misc.h"/>
+        <file file_name="stm32f10x_usart.h"/>
+        <file file_name="stm32f10x_exti.h"/>
+        <file file_name="stm32f10x_pwr.h"/>
+        <file file_name="stm32f10x_flash.h"/>
+        <file file_name="stm32f10x_iwdg.h"/>
+        <file file_name="stm32f10x_can.h"/>
+      </folder>
+      <folder Name="src" file_name="">
+        <file file_name="stm32f10x_gpio.c"/>
+        <file file_name="stm32f10x_rcc.c"/>
+        <file file_name="system_stm32f10x.c"/>
+        <file file_name="stm32f10x_tim.c"/>
+        <file file_name="stm32f10x_dbgmcu.c"/>
+        <file file_name="stm32f10x_adc.c"/>
+        <file file_name="stm32f10x_dma.c"/>
+        <file file_name="misc.c"/>
+        <file file_name="stm32f10x_usart.c"/>
+        <file file_name="stm32f10x_exti.c"/>
+        <file file_name="stm32f10x_pwr.c"/>
+        <file file_name="stm32f10x_flash.c"/>
+        <file file_name="stm32f10x_iwdg.c"/>
+        <file file_name="stm32f10x_can.c"/>
+      </folder>
+      <file file_name="core_cm3.h"/>
+    </folder>
+    <configuration Name="Debug" gcc_optimization_level="Level 1"/>
+    <configuration Name="Release" c_preprocessor_definitions="STARTUP_FROM_RESET" gcc_debugging_level="Level 2" gcc_optimization_level="Level 1"/>
+  </project>
+  <configuration Name="THUMB Debug" inherited_configurations="THUMB;Debug"/>
+  <configuration Name="THUMB" Platform="ARM" arm_instruction_set="THUMB" arm_library_instruction_set="THUMB" c_preprocessor_definitions="__THUMB" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_debugging_level="Level 2" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="THUMB Release" inherited_configurations="THUMB;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_additional_options="-g1" c_preprocessor_definitions="NDEBUG" gcc_debugging_level="Level 1" gcc_optimization_level="Level 2" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="Common" linker_printf_fp_enabled="Yes"/>
+</solution>

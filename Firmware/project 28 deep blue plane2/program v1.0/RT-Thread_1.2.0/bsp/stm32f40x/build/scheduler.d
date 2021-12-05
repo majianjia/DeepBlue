@@ -1,0 +1,10 @@
+.\build\scheduler.o: ..\..\src\scheduler.c
+.\build\scheduler.o: ..\..\include\rtthread.h
+.\build\scheduler.o: ..\..\include\rtdef.h
+.\build\scheduler.o: .\rtconfig.h
+.\build\scheduler.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\build\scheduler.o: ..\..\include\rtdebug.h
+.\build\scheduler.o: ..\..\include\rtservice.h
+.\build\scheduler.o: ..\..\include\rtm.h
+.\build\scheduler.o: ..\..\include\rtthread.h
+.\build\scheduler.o: ..\..\include\rthw.h

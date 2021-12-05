@@ -1,0 +1,14 @@
+.\build\msd.o: drivers\msd.c
+.\build\msd.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+.\build\msd.o: drivers\msd.h
+.\build\msd.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\build\msd.o: ..\..\components\drivers\include\drivers/spi.h
+.\build\msd.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+.\build\msd.o: ..\..\include\rtthread.h
+.\build\msd.o: ..\..\include\rtdef.h
+.\build\msd.o: .\rtconfig.h
+.\build\msd.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\build\msd.o: ..\..\include\rtdebug.h
+.\build\msd.o: ..\..\include\rtservice.h
+.\build\msd.o: ..\..\include\rtm.h
+.\build\msd.o: ..\..\include\rtthread.h

@@ -1,0 +1,10 @@
+.\build\struct_all.o: user\struct_all.c
+.\build\struct_all.o: user\struct_all.h
+.\build\struct_all.o: ..\..\include\rtthread.h
+.\build\struct_all.o: ..\..\include\rtdef.h
+.\build\struct_all.o: .\rtconfig.h
+.\build\struct_all.o: d:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\build\struct_all.o: ..\..\include\rtdebug.h
+.\build\struct_all.o: ..\..\include\rtservice.h
+.\build\struct_all.o: ..\..\include\rtm.h
+.\build\struct_all.o: ..\..\include\rtthread.h
